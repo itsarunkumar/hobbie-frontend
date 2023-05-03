@@ -13,7 +13,9 @@ export default function TableContent({ table, index, handleCheck }) {
     mutationKey: ["table", table._id],
     mutationFn: (table) => {
       console.log(table);
-      return axios.delete(`http://localhost:5000/table/delete/${table._id}`);
+      return axios.delete(
+        `https://hobbie.onrender.com/table/delete/${table._id}`
+      );
     },
     onSuccess: () => {
       // Invalidate and refetch

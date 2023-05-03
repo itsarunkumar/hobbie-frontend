@@ -17,7 +17,7 @@ export default function Table({ children }) {
   const { data, isLoading, error } = useQuery({
     queryKey: ["table"],
     queryFn: () => {
-      return axios.get("http://localhost:5000/table/get");
+      return axios.get("https://hobbie.onrender.com/table/get");
     },
   });
 

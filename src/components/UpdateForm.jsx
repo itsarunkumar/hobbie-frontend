@@ -14,7 +14,10 @@ export default function UpdateForm({ table, setIsEditing }) {
   const mutation = useMutation({
     mutationKey: ["table", table._id],
     mutationFn: (data) => {
-      return axios.put("http://localhost:5000/table/update/" + table._id, data);
+      return axios.put(
+        "https://hobbie.onrender.com/table/update/" + table._id,
+        data
+      );
     },
     onSuccess: () => {
       // Invalidate and refetch

@@ -14,7 +14,7 @@ const Form = ({ setIsEditing }) => {
 
   const mutation = useMutation({
     mutationFn: (data) => {
-      return axios.post("http://localhost:5000/table/add", data);
+      return axios.post("https://hobbie.onrender.com/table/add", data);
     },
     onSuccess: () => {
       // Invalidate and refetch
