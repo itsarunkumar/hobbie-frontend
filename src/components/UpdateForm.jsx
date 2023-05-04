@@ -37,7 +37,7 @@ export default function UpdateForm({ table, setIsEditing }) {
 
   return (
     <div className="max-w-md mx-auto my-4 px-4 py-8 bg-slate-900 w-full rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4">Example Form</h2>
+      <h2 className="text-2xl font-bold mb-4">Update</h2>
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <div>
           <label
